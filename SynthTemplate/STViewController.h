@@ -8,6 +8,29 @@
 
 #import <UIKit/UIKit.h>
 
-@interface STViewController : UIViewController
+#import "PdDispatcher.h"
+
+@interface STViewController : UIViewController {
+    PdDispatcher *dispatcher;
+    void *patch;
+}
+
+-(IBAction)playF0:(id)sender;
+-(IBAction)playFs0:(id)sender;
+-(IBAction)playG0:(id)sender;
+-(IBAction)playGs0:(id)sender;
+-(IBAction)playA:(id)sender;
+-(IBAction)playAs:(id)sender;
+-(IBAction)playB:(id)sender;
+-(IBAction)playC:(id)sender;
+-(IBAction)playCs:(id)sender;
+-(IBAction)playD:(id)sender;
+-(IBAction)playDs:(id)sender;
+-(IBAction)playE:(id)sender;
+-(IBAction)playF:(id)sender;
+-(IBAction)playFs:(id)sender;
+-(IBAction)playG:(id)sender;
+-(IBAction)playGs:(id)sender;
+-(IBAction)playA2:(id)sender;
 
 @end

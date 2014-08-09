@@ -22,6 +22,12 @@
 		AE32DC1A199675B900C957CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE32DBF9199675B800C957CF /* UIKit.framework */; };
 		AE32DC22199675B900C957CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE32DC20199675B900C957CF /* InfoPlist.strings */; };
 		AE32DC24199675B900C957CF /* SynthTemplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE32DC23199675B900C957CF /* SynthTemplateTests.m */; };
+		AE32DC3B1996766400C957CF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE32DC391996766400C957CF /* AudioToolbox.framework */; };
+		AE32DC3C1996766400C957CF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE32DC3A1996766400C957CF /* AVFoundation.framework */; };
+		AE6180D71996777100241D78 /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6180D41996776A00241D78 /* libpd-ios.a */; };
+		AE6180D91996796100241D78 /* basic_synth_engine.pd in Resources */ = {isa = PBXBuildFile; fileRef = AE6180D81996796100241D78 /* basic_synth_engine.pd */; };
+		AE6180DB19967E8300241D78 /* redkey.png in Resources */ = {isa = PBXBuildFile; fileRef = AE6180DA19967E8300241D78 /* redkey.png */; };
+		AE6180DD19967F4D00241D78 /* whitekey.png in Resources */ = {isa = PBXBuildFile; fileRef = AE6180DC19967F4D00241D78 /* whitekey.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +37,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = AE32DBF1199675B800C957CF;
 			remoteInfo = SynthTemplate;
+		};
+		AE6180D31996776A00241D78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE6180CE1996776A00241D78 /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
+		AE6180D51996776A00241D78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE6180CE1996776A00241D78 /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 119013AB1486450C00086F19;
+			remoteInfo = "libpd-osx";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -55,6 +75,12 @@
 		AE32DC1F199675B900C957CF /* SynthTemplateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SynthTemplateTests-Info.plist"; sourceTree = "<group>"; };
 		AE32DC21199675B900C957CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AE32DC23199675B900C957CF /* SynthTemplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynthTemplateTests.m; sourceTree = "<group>"; };
+		AE32DC391996766400C957CF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AE32DC3A1996766400C957CF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AE6180CE1996776A00241D78 /* libpd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpd.xcodeproj; path = "../pd-for-ios/libpd/libpd.xcodeproj"; sourceTree = "<group>"; };
+		AE6180D81996796100241D78 /* basic_synth_engine.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = basic_synth_engine.pd; path = ../../pd_patches/basic_synth_engine.pd; sourceTree = "<group>"; };
+		AE6180DA19967E8300241D78 /* redkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redkey.png; path = Images.xcassets/redkey.png; sourceTree = "<group>"; };
+		AE6180DC19967F4D00241D78 /* whitekey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whitekey.png; path = Images.xcassets/whitekey.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +88,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE32DBF6199675B800C957CF /* Foundation.framework in Frameworks */,
 				AE32DBF8199675B800C957CF /* CoreGraphics.framework in Frameworks */,
 				AE32DBFA199675B800C957CF /* UIKit.framework in Frameworks */,
-				AE32DBF6199675B800C957CF /* Foundation.framework in Frameworks */,
+				AE32DC3B1996766400C957CF /* AudioToolbox.framework in Frameworks */,
+				AE32DC3C1996766400C957CF /* AVFoundation.framework in Frameworks */,
+				AE6180D71996777100241D78 /* libpd-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +113,7 @@
 		AE32DBE9199675B800C957CF = {
 			isa = PBXGroup;
 			children = (
+				AE6180CE1996776A00241D78 /* libpd.xcodeproj */,
 				AE32DBFB199675B800C957CF /* SynthTemplate */,
 				AE32DC1D199675B900C957CF /* SynthTemplateTests */,
 				AE32DBF4199675B800C957CF /* Frameworks */,
@@ -103,6 +133,8 @@
 		AE32DBF4199675B800C957CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE32DC391996766400C957CF /* AudioToolbox.framework */,
+				AE32DC3A1996766400C957CF /* AVFoundation.framework */,
 				AE32DBF5199675B800C957CF /* Foundation.framework */,
 				AE32DBF7199675B800C957CF /* CoreGraphics.framework */,
 				AE32DBF9199675B800C957CF /* UIKit.framework */,
@@ -117,10 +149,13 @@
 				AE32DC04199675B800C957CF /* STAppDelegate.h */,
 				AE32DC05199675B800C957CF /* STAppDelegate.m */,
 				AE32DC07199675B800C957CF /* Main_iPhone.storyboard */,
+				AE6180DC19967F4D00241D78 /* whitekey.png */,
 				AE32DC0A199675B800C957CF /* Main_iPad.storyboard */,
 				AE32DC0D199675B800C957CF /* STViewController.h */,
 				AE32DC0E199675B800C957CF /* STViewController.m */,
+				AE6180D81996796100241D78 /* basic_synth_engine.pd */,
 				AE32DC10199675B800C957CF /* Images.xcassets */,
+				AE6180DA19967E8300241D78 /* redkey.png */,
 				AE32DBFC199675B800C957CF /* Supporting Files */,
 			);
 			path = SynthTemplate;
@@ -153,6 +188,15 @@
 				AE32DC20199675B900C957CF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE6180CF1996776A00241D78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE6180D41996776A00241D78 /* libpd-ios.a */,
+				AE6180D61996776A00241D78 /* libpd-osx.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +263,12 @@
 			mainGroup = AE32DBE9199675B800C957CF;
 			productRefGroup = AE32DBF3199675B800C957CF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AE6180CF1996776A00241D78 /* Products */;
+					ProjectRef = AE6180CE1996776A00241D78 /* libpd.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AE32DBF1199675B800C957CF /* SynthTemplate */,
@@ -227,6 +277,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		AE6180D41996776A00241D78 /* libpd-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-ios.a";
+			remoteRef = AE6180D31996776A00241D78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE6180D61996776A00241D78 /* libpd-osx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-osx.a";
+			remoteRef = AE6180D51996776A00241D78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		AE32DBF0199675B800C957CF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -234,8 +301,11 @@
 			files = (
 				AE32DC0C199675B800C957CF /* Main_iPad.storyboard in Resources */,
 				AE32DC11199675B800C957CF /* Images.xcassets in Resources */,
+				AE6180DD19967F4D00241D78 /* whitekey.png in Resources */,
 				AE32DC09199675B800C957CF /* Main_iPhone.storyboard in Resources */,
 				AE32DC00199675B800C957CF /* InfoPlist.strings in Resources */,
+				AE6180DB19967E8300241D78 /* redkey.png in Resources */,
+				AE6180D91996796100241D78 /* basic_synth_engine.pd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +465,7 @@
 				GCC_PREFIX_HEADER = "SynthTemplate/SynthTemplate-Prefix.pch";
 				INFOPLIST_FILE = "SynthTemplate/SynthTemplate-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../pd-for-ios/libpd/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -408,6 +479,7 @@
 				GCC_PREFIX_HEADER = "SynthTemplate/SynthTemplate-Prefix.pch";
 				INFOPLIST_FILE = "SynthTemplate/SynthTemplate-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../pd-for-ios/libpd/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -471,6 +543,7 @@
 				AE32DC29199675B900C957CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE32DC2A199675B900C957CF /* Build configuration list for PBXNativeTarget "SynthTemplateTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +552,7 @@
 				AE32DC2C199675B900C957CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
